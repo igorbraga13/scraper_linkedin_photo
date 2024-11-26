@@ -12,8 +12,6 @@ background = Image.open('data/background.jpg')
 # Removing background
 image1 = remove(image1)
 image2 = remove(image2)
-# img1.save('data/image1.png')
-# img2.save('data/image2.png')
 
 # Resizing images if necessary
 image1 = image1.resize((250, 250)) 
