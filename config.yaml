@@ -1,0 +1,8 @@
+browser_params:
+  link_1: 'https://www.linkedin.com/in/igor-braga-/'  
+  link_2: 'https://www.linkedin.com/in/eczachly/'
+dir_param: 'data'
+time_param: 5
+login_params:
+  username: 'your_email@email.com'
+  password: 'your_password'
