@@ -11,16 +11,16 @@ background = Image.open('data/background.jpg')
 
 # Removing background
 image1 = remove(image1)
-image2 = remove(image2)
+image2 = remove(image2, alpha_matting=True)
 
 # Resizing images if necessary
-image1 = image1.resize((250, 250)) 
+image1 = image1.resize((220, 220)) 
 image2 = image2.resize((250, 250))
 background = background.resize((500, 250))
 
 # Defining the positions where images will be overlapped on the background image
-position1 = (50, 0)   # Coordinates (x, y) for the first image
-position2 = (200, 0)  # Coordinates (x, y) for the second image
+position1 = (80, 30)   # Coordinates (x, y) for the first image
+position2 = (200, 40)  # Coordinates (x, y) for the second image
 
 # Overlapping
 background.paste(image1, position1, image1)

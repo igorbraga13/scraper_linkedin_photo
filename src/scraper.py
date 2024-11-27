@@ -20,8 +20,6 @@ if not exists(DIR_NAME):
 
 browser = webdriver.Chrome(service = Service(), options = webdriver.ChromeOptions())
 browser.get('https://www.linkedin.com/login')
-file = open('config.txt')
-lines = file.readlines()
 
 elementID = browser.find_element(By.ID,'username')
 elementID.send_keys(USERNAME)
